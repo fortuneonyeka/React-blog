@@ -4,6 +4,7 @@ import Blogs from "./Blogs";
 const Home = () => {
   const initialState = [];
   const [blogs, setBlogs] = useState(initialState);
+  const [isLoading, setIsLoading] = useState(true)
   
   
   // const handleDelete = (id) => {
@@ -19,11 +20,13 @@ const Home = () => {
     })
     .then(data => {
      setBlogs(data)
+     setIsLoading(false)
     })
   },[])
   return (
-    <div className='home'>
-      {blogs && <Blogs blogsProp={blogs} titleProp='All Blogs'/>}
+    <div className="home">
+      {isLoading && <div> Loading... </div>}
+      {blogs && <Blogs blogsProp={blogs} titleProp="All Blogs" />}
       {/* {blogs && <Blogs blogsProp={blogs.filter((blog) => blog.author === 'Mikel')} titleProp="Mikel's Blogs"/>} */}
     </div>
   );
