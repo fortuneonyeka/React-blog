@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "My website",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, minus.",
+      "author": "yoshi",
+      "id": 1
+    },
+    {
+      "title": "My Blog",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, minus.",
+      "author": "Mikel",
+      "id": 2
+    },
+    {
+      "title": "My website",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, minus.",
+      "author": "Mikel",
+      "id": 3
+    }
+  ]
+}
