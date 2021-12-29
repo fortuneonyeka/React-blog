@@ -2,45 +2,29 @@ import { useState, useEffect } from "react"
 import Blogs from "./Blogs";
 
 const Home = () => {
-  const initialState = [
-    {
-      title: 'My website',
-      body: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, minus.',
-      author: 'yoshi',
-      id: 1,
-    },
-    {
-      title: 'My Blog',
-      body: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, minus.',
-      author: 'Mikel',
-      id: 2,
-    },
-    {
-      title: 'My website',
-      body: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, minus.',
-      author: 'Mikel',
-      id: 3,
-    },
-  ];
+  const initialState = [];
   const [blogs, setBlogs] = useState(initialState);
-  const [name, setName] = useState('jon')
   
   
-  const handleDelete = (id) => {
-    const filteredBlogs = blogs.filter((blog) => blog.id !== id)
-    setBlogs(filteredBlogs)
-  }
+  // const handleDelete = (id) => {
+  //   const filteredBlogs = blogs.filter((blog) => blog.id !== id)
+  //   setBlogs(filteredBlogs)
+  // }
 
   useEffect(() => {
-    console.log('use effect running');
-    console.log(name);
-  },[name])
+    // to get this endpoint, run the following on the command line: npx json-server --watch data/db.json --port3000
+    fetch("http://localhost:3000/blogs")
+    .then(Response => {
+      return Response.json()
+    })
+    .then(data => {
+     setBlogs(data)
+    })
+  },[])
   return (
     <div className='home'>
-      <Blogs blogsProp={blogs} titleProp='All Blogs' handleDelete={handleDelete}/>
-      <Blogs blogsProp={blogs.filter((blog) => blog.author === 'Mikel')} titleProp="Mikel's Blogs"/>
-      <button onClick={() => setName('Fortune')}>Change Name</button>
-      <p>{name}</p>
+      {blogs && <Blogs blogsProp={blogs} titleProp='All Blogs'/>}
+      {/* {blogs && <Blogs blogsProp={blogs.filter((blog) => blog.author === 'Mikel')} titleProp="Mikel's Blogs"/>} */}
     </div>
   );
 }
