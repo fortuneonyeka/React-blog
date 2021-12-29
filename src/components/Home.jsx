@@ -15,7 +15,7 @@ const Home = () => {
 
   useEffect(() => {
     // to get this endpoint, run the following on the command line: npx json-server --watch data/db.json --port3000
-    fetch("http://localhost:3000/blogs")
+    fetch("http://localhost:3000/blogss")
     .then(Response => {
       if (!Response.ok) {
         throw Error('data did not fetch')
@@ -28,6 +28,7 @@ const Home = () => {
     })
     .catch(err => {
       setError(err.message)
+       setIsLoading(false);
     })
   },[])
   return (
