@@ -4,7 +4,6 @@ import Home from "./components/Home";
 import About from "./components/About";
 import NewBlog from "./components/NewBlog";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import Blogs from "./components/Blogs";
 
 const App = () => {
   return (

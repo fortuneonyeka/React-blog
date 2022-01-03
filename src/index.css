@@ -44,3 +44,10 @@
   display: block;
   margin-top: 10px;
 }
+
+.errorMessage {
+  color:red;
+  font-weight: 900;
+  font-size: x-large;
+
+}
