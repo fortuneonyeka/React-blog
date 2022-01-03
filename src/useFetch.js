@@ -1,7 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from "react";
 
-
 const useFetch =(url) => {
   const initialState = [];
   const [data, setData] = useState(initialState);

@@ -2,8 +2,9 @@
 import useFetch from "../useFetch";
 import Blogs from "./Blogs";
 
+
 const Home = () => {
-  const { data:blogs, isLoading, error } = useFetch("http://localhost:3000/blogs");
+  const { data:blogs, isLoading, error } = useFetch( "http://localhost:3000/blogs");
   
   // const handleDelete = (id) => {
   //   const filteredBlogs = blogs.filter((blog) => blog.id !== id)
