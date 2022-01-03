@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { useEffect, useState } from "react";
 
 const useFetch =(url) => {
@@ -14,7 +14,7 @@ const useFetch =(url) => {
         if (!Response.ok) {
           throw Error("data did not fetch");
         }
-        return Response.json();
+        return Response.json()
       })
       .then((data) => {
         setData(data);
@@ -27,7 +27,7 @@ const useFetch =(url) => {
       });
   }, [url]);
 
-  return {data, isLoading,error}
+  return {data, isLoading}
 }
 
 export default useFetch
