@@ -5,10 +5,13 @@ const useFetch =(url) => {
   const [data, setData] = useState(initialState);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+
   
   useEffect(() => {
     // to get this endpoint, run the following on the command line: npx json-server --watch data/db.json --port3000
     const abortCont = new AbortController()
+    
+    
     //useEffect cleanup using AbortController
     fetch(url, {signal: abortCont.signal})
       .then((Response) => {
@@ -34,6 +37,7 @@ const useFetch =(url) => {
       return () => {
         abortCont.abort()
       }
+     
   }, [url]);
 
   return {data, isLoading, error}
