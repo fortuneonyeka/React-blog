@@ -13,9 +13,11 @@
   max-width: 600px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
+  font-size: 20px;
 }
 .navbar h1 {
   color: #f1356d;
+  font-size: 37px;
 }
 .navbar .links {
   margin-left: auto;
@@ -50,4 +52,74 @@
   font-weight: 900;
   font-size: x-large;
 
+}
+
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom:1px solid red;
+}
+
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.about-preview {
+  padding: 10px;
+  line-height: 50px;
+  border-bottom:1px solid red;
+}
+
+.blog-details {
+  font-size: 20px;
+  line-height: 40px;
+  padding: 20px;
+}
+
+.blog-detail-title {
+  font-weight: bolder;
+  color: #f1356d;
+}
+
+.blog-detail-author {
+  font-weight: bold;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.label {
+  display: block;
+  font-size: 25px;
+  text-align: left;
+}
+
+input, textarea {
+  padding: 10px 10px;
+  width: 56%;
+  margin: 10px 0;
+  display: block;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.btn {
+  width: 56%;
+  background-color: #f1356d;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  height: 10%;
+  border-radius: 5%;
+}
+
+.btn:hover {
+  background-color:green;
+  font-size: 15px;
+  border-radius: 0;
+}
+
+select {
+  font-size: 20px;
+  width: 56%;
+  padding: 8px;
 }
