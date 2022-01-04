@@ -51,6 +51,7 @@
   color:red;
   font-weight: 900;
   font-size: x-large;
+  /* margin-bottom: 20px; */
 
 }
 
@@ -63,6 +64,15 @@
 .link {
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.link-to-home {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: green;
+  
 }
 
 .about-preview {
@@ -109,17 +119,31 @@ input, textarea {
   font-size: 20px;
   padding: 10px;
   height: 10%;
-  border-radius: 5%;
+  border-radius: 5px;
 }
 
 .btn:hover {
   background-color:green;
   font-size: 15px;
-  border-radius: 0;
+  border-radius: 5px;
 }
 
 select {
   font-size: 20px;
   width: 56%;
   padding: 8px;
+}
+
+.delete-btn {
+  width: 30%;
+  background-color: rgb(86, 53, 230);
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  height: 10%;
+}
+
+.delete-btn:hover {
+  background-color: red;
+  border-radius: 5px;
 }

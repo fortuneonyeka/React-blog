@@ -5,6 +5,7 @@ import About from "./components/About";
 import NewBlog from "./components/NewBlog";
 import BlogDetails from "./components/BlogDetails";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NotFound from "./components/NotFound";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/newblog" element={<NewBlog />} />
             <Route path="/blogdetails/:id" element={<BlogDetails />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </div>

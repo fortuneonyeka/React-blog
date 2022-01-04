@@ -50,7 +50,6 @@ const NewBlog = () => {
         value={body}
         onChange={(e) => setBody(e.target.value)}
         id="blog-content"
-        maxLength="200"
         minLength="10"
         rows="5"
         required
