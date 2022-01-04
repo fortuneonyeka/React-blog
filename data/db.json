@@ -73,12 +73,6 @@
       "id": 12
     },
     {
-      "title": "Another",
-      "body": "hello world",
-      "author": "Fortune",
-      "id": 13
-    },
-    {
       "title": "hello",
       "body": "hhhewwwweeeee",
       "author": "Mike",
@@ -119,12 +113,6 @@
       "body": "oooooomg!!!!!!!!",
       "author": "Mike",
       "id": 20
-    },
-    {
-      "title": "My blog",
-      "body": "lokjkhhaggfsyydd",
-      "author": "Mike",
-      "id": 21
     }
   ]
 }
