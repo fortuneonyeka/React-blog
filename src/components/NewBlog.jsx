@@ -3,11 +3,12 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 
 
-function NewBlog() {
+const NewBlog = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("Mike");
   const [isPending, setIspending] = useState(false)
+  
  const navigate = useNavigate();
  
 
@@ -30,6 +31,8 @@ function NewBlog() {
     })
     
   };
+
+
 
   return (
     <form onSubmit={handleSubmit}>

@@ -1,6 +1,20 @@
 import { Link } from "react-router-dom";
-// import { useState } from "react";
+// import {useState } from "react";
+
+// import { useNavigate } from "react-router-dom";
+// import useFetch from "../useFetch";
+
+
+
 const Blogs = ({blogsProp, titleProp}) => {
+
+  // const [status, setStatus] = useState("")
+  // const navigate = useNavigate();
+
+  
+
+ 
+    
   
   return (
     <div className="blogs" style={{ padding: "20px", lineHeight: "40px" }}>
